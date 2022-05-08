@@ -1,0 +1,329 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+body {
+  color: #262626;
+  font-size: 14px;
+  line-height: 18px;
+}
+.app {
+  background-color: #fafafa;
+  min-height: 100vh;
+  
+}
+.app__header {
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  height: 54px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  object-fit: contain;
+  border-bottom: 1px solid lightgray;
+}
+.app__headerWrapper {
+  max-width: 975px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.app__headerButtons {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.search_section {
+  display: flex;
+  align-items: center;
+  background-color: #eeeeee;
+  padding: 5px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.search_icon {
+  height: 20px;
+  opacity: 0.5;
+}
+
+.search_bar {
+  background-color: #eeeeee;
+  border: none;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+button {
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+.btn {
+  background-color: #ffffff;
+  padding: 5px 2px;
+  text-align: center;
+}
+
+.btn_image {
+  width: 30px;
+}
+
+.profile_image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.text__button {
+  color: #0095f6;
+  font-weight: 600;
+  line-height: 28px;
+  background-color: transparent;
+}
+.app__signUp {
+  display: flex;
+  flex-direction: column;
+  margin: 28px 0;
+  row-gap: 15px;
+}
+
+.sectionWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.leftSection_wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.status_wrapper {
+  display: flex;
+  justify-content: end;
+  padding-top: 20px;
+  margin-top: 60px;
+}
+
+.status {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  width: 70%;
+  padding: 0 20px;
+  overflow-x: scroll;
+}
+
+.tl_wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.timeline {
+  width: 70%;
+  padding: 20px -20px;
+  margin-top: 20px;
+}
+
+.rightSection_wrapper {
+  width: 40%;
+  max-height: max-content;
+  padding: 10px 0 40px 50px;
+  margin-top: 100px;
+}
+
+.rightSection {
+  position:fixed;
+}
+
+.trocarPerfil {
+  display: inline-flex;
+  max-width: 270px;
+  margin-left: -20px;
+}
+
+.trocarPerfil img {
+  width: 60px;
+  height: 60px;
+}
+
+.nomePerfil {
+  margin-left: 20px;
+  padding: 12px 0;
+}
+
+.nomePerfil h3 {
+  margin: 0px;
+  font-weight: 600;
+}
+
+.nomePerfil h4 {
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.btn_trocarPerfil {
+  background-color: #fafafa;
+  color: dodgerblue;
+  margin-left: 65px;
+}
+
+.sugestoes {
+  display: flex;
+  justify-content: space-between;
+  max-width: 290px;
+  margin: 20px 0 20px -35px;
+}
+
+.sugestoes h3 {
+  opacity: 0.5;
+  font-size: 14px;
+}
+
+.sugestoes button {
+  font-weight: 500;
+  font-size: 12px;
+  background-color: #fafafa;
+}
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  * {
+    font-size: 12px;
+  }
+
+  body {
+    max-width: 100%;
+  }
+  
+  .timeline {
+    width: 100%; 
+    padding: 5px 0;
+    margin: 5px auto; 
+  }
+
+  .status {
+    width: 100%;
+  }
+
+  .status_wrapper {
+    margin-top: 30px;
+  }
+
+  .app__headerButtons {
+    column-gap: 10px;
+  }
+
+  .btn_image {
+    width: 25px;
+  }
+
+  .profile_image {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .search_icon, .search_bar, .search_section {
+    display: none;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+
+  .rightSection_wrapper {
+    display: none;
+  }
+
+}
+
+
+@media (min-width: 600px) and (max-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+  
+  .timeline {
+    width: 100%; 
+    padding: 5px 0;
+    margin: 5px auto; 
+  }
+
+  .status {
+    width: 100%;
+  }
+
+  .status_wrapper {
+    margin-top: 30px;
+  }
+
+  .app__headerButtons {
+    column-gap: 5px;
+  }
+
+  .btn_image {
+    width: 25px;
+  }
+
+  .profile_image {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+
+  .rightSection_wrapper {
+    display: none;
+  }
+
+} 
+
+
+@media (min-width: 768) {
+  .status_wrapper {
+    margin-top: 30px;
+  }
+
+  .app__headerButtons {
+    column-gap: 5px;
+  }
+
+  .btn_image {
+    width: 20px;
+  }
+
+  .profile_image {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+}

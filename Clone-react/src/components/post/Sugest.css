@@ -1,0 +1,38 @@
+.sugestWrapper {
+    display: flex;
+    padding: 20px 20px 20px 0;
+    margin: -20px 0px 5px -15px;
+    max-width: 290px;
+}
+
+
+
+.sugestImage {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sugestProfileName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 0 -5px;
+}
+
+.sugestProfileName h3 {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.sugestProfileName h4 {
+    margin-left: 20px;
+    font-size: 12px;
+    opacity: 0.5;
+}
+
+.sugestBtn {
+    background-color: transparent;
+    color: dodgerblue;
+    margin-right: -20px;
+}

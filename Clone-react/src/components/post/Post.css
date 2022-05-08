@@ -1,0 +1,117 @@
+/* Card do Post*/
+.post {
+    border: 1px solid #dcdcdc;
+    margin-bottom: 30px;
+    width: 100%;
+}
+/*Header*/
+.post__header {
+    background-color: #ffffff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+/*Alinhamento dos elementos do Header*/
+.post__headerwrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+
+}
+/*Alinhamento da foto do perfil e o seu nome*/
+.profile__wrapper {
+    display: flex;
+    margin: 0 20px;
+    align-items: center;
+}
+
+.post__profileimage {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+
+/*afastamento do nome da foto*/
+h3 {
+    margin-left: 20px;
+}
+/*alinhamento dos "..." */
+.more {
+    margin-right: 30px;
+    font-size: 24px;
+}
+/*configuração da largura da imagem para não ultrapassar o post*/
+.post__image {
+    width: 100%;
+}
+
+.post__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__btn {
+    margin: 7px 10px 10px 10px;
+}
+/* secção da descrição do post */
+.post__text {
+    padding: 10px 60px 10px 20px;
+    display: flex;
+}
+.post__text strong {
+    font-size: 14px;
+    padding-right:20px;
+    
+}
+.post__text p {
+    font-weight: 400;
+    padding-left: 7px;
+}
+.post__date {
+    padding: 0 0 10px 20px;
+    opacity: 0.7;
+    font-size: 10px;
+}
+
+/* secção do input de comentários */
+.post__comments {
+    border-top: 1px solid #eeeeee;
+    background-color: #ffffff;
+    display: flex;
+    width: 100%;
+}
+
+.post__commentinput {
+    border: none;
+    width: 100%;
+}
+
+.post__commentinput {
+    line-break: auto;
+    margin: auto;
+    word-wrap: break-word;
+    min-height: 30px;
+    max-height: 150px;
+    font-size: 14px;
+    resize: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+.post__commentbtn {
+    background-color: transparent;
+    color: dodgerblue;
+    padding: 0 20px;
+    opacity: 0.3;
+}
+
+/* animações */
+
+.post__btn:hover, .btn:hover {
+    filter: opacity(0.7);
+}
+
